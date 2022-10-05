@@ -2,7 +2,9 @@ const router = require("express").Router();
 
 /* GET home page */
 router.get("/", (req, res, next) => {
-  res.send("SÓC LA ARREL!!");
+  res.json({
+    missatge: "hola tu"
+  });
 });
 
 module.exports = router;
